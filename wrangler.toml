@@ -1,0 +1,10 @@
+name = "bumpx-api"
+main = "worker.js"
+compatibility_date = "2025-11-15"
+
+kv_namespaces = [
+  { binding = "STATS", id = "6067de7658294392be1e5990bebdeaec" }
+]
+
+[vars]
+SECRET_KEY = "BumpX@@@"
