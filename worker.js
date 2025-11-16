@@ -7,7 +7,7 @@ export default {
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     };
 
-    // Préflight
+    // Préflight CORS
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: cors });
     }
@@ -45,6 +45,7 @@ export default {
       try {
         const body = await request.json();
 
+        // Sauvegarde des stats dans Cloudflare KV (persistant)
         await env.STATS.put("bot_stats", JSON.stringify(body));
 
         return new Response(
@@ -63,3 +64,4 @@ export default {
     return new Response("Not found", { status: 404, headers: cors });
   }
 };
+
