@@ -3,8 +3,7 @@ main = "worker.js"
 compatibility_date = "2025-11-15"
 
 kv_namespaces = [
-  { binding = "STATS", id = "6067de7658294392be1e5990bebdeaec" },
-  { binding = "USER_BUMPS", id = "d713fab5398d4f79855c24aab8c2a1f0" }
+  { binding = "STATS", id = "6067de7658294392be1e5990bebdeaec" }
 ]
 
 [vars]
