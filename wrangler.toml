@@ -9,6 +9,9 @@ kv_namespaces = [
 
 [vars]
 SECRET_KEY = "BumpX@@@"
+
 DISCORD_CLIENT_ID = "1439239509521989745"
 DISCORD_CLIENT_SECRET = "urnCz0CyNE_66VOckTI16casJJcxZNyi"
-REDIRECT_URI = "https://bumpx.pages.dev/auth/discord/callback"
+
+# Redirect vers ton fichier auth.html
+REDIRECT_URI = "https://bumpx.pages.dev/auth.html"
