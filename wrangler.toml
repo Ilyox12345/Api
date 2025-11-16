@@ -3,8 +3,12 @@ main = "worker.js"
 compatibility_date = "2025-11-15"
 
 kv_namespaces = [
-  { binding = "STATS", id = "6067de7658294392be1e5990bebdeaec" }
+  { binding = "STATS", id = "6067de7658294392be1e5990bebdeaec" },
+  { binding = "USER_BUMPS", id = "d713fab5398d4f79855c24aab8c2a1f0" }
 ]
 
 [vars]
 SECRET_KEY = "BumpX@@@"
+DISCORD_CLIENT_ID = "1439239509521989745"
+DISCORD_CLIENT_SECRET = "urnCz0CyNE_66VOckTI16casJJcxZNyi"
+REDIRECT_URI = "https://bumpx.pages.dev/auth/discord/callback"
